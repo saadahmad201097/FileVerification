@@ -154,8 +154,7 @@ function Home(props) {
         showToast("Files with type .png, .jpeg, .jpg and .pdf are allowed.");
         return;
       }
-
-      if (file[0].size > 1048576) {
+      if (file[0].size > 10485760) {
         showToast("File size must not be greater then 10mb");
         return;
       }
